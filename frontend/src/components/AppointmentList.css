@@ -1,0 +1,76 @@
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.appointment-card {
+  display: flex;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  overflow: hidden;
+  background: #ffffff;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.appointment-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
+  transform: translateY(-1px);
+}
+
+/* Left accent bar */
+.appt-bar {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.appt-bar-confirmed  { background: linear-gradient(to bottom, #2563eb, #4f46e5); }
+.appt-bar-cancelled  { background: #d1d5db; }
+
+/* Body */
+.appt-body {
+  flex: 1;
+  padding: 18px 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.appt-info {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Name + badge row */
+.appt-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.appt-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  letter-spacing: -0.2px;
+}
+
+/* Date / time / email row */
+.appt-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Optional note */
+.appt-note {
+  font-size: 13px;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 6px;
+}

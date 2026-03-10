@@ -1,0 +1,120 @@
+.slot-grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slot-day {
+  margin-bottom: 36px;
+}
+
+.slot-day-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9edf4;
+}
+
+.slot-day-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: -0.2px;
+}
+
+.slot-day-count {
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.slots-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.slot-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #e2e8f0;
+  background: #ffffff;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.slot-btn:hover {
+  border-color: #2563eb;
+  background: linear-gradient(135deg, #eff6ff, #eef2ff);
+  color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+}
+
+.slot-btn:active {
+  transform: translateY(0);
+}
+
+.slot-start {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.slot-end {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+}
+
+.slot-btn:hover .slot-end {
+  color: #93c5fd;
+}
+
+/* Shared badge (used in slot header too) */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-blue {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-green {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-gray {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+/* Empty / loading states (shared across components) */
+.empty-state {
+  text-align: center;
+  padding: 80px 0;
+  color: #9ca3af;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 15px;
+}
